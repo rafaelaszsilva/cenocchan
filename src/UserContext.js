@@ -1,4 +1,4 @@
-import { getSuggestedQuery } from "@testing-library/react";
+// import { getSuggestedQuery } from "@testing-library/react";
 import React, { createContext, useState, useCallback, useEffect } from "react";
 import { TOKEN_POST, TOKEN_VALIDATE_POST, USER_GET } from "./api";
 import { useNavigate } from "react-router-dom";
@@ -34,7 +34,7 @@ export const UserStorage = ({ children }) => {
       const { token } = await tokenResponse.json();
       window.localStorage.setItem("token", token);
       await getUser(token);
-      navigate("/conta");
+      navigate("/account");
     } catch (error) {
       setError(error.message);
       setLogin(false);
@@ -71,6 +71,8 @@ export const UserStorage = ({ children }) => {
         } finally {
           setLoading(false);
         }
+      } else {
+        setLogin(false);
       }
     }
     autoLogin();

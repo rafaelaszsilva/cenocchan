@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import Input from "../Form/Input";
 import Button from "../Form/Button";
@@ -42,7 +42,7 @@ const LoginForm = () => {
         <h2 className={styles.subtitle}>Cadastre-se</h2>
         <p>Ainda não possui conta? Cadastre-se.</p>
       </div>
-      <Link className={stylesButton.button} to="/login/criar">
+      <Link className={stylesButton.button} to="/login/create">
         Cadastro
       </Link>
     </section>
