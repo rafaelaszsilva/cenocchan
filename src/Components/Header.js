@@ -3,9 +3,10 @@ import { Link } from "react-router-dom";
 import styles from "./Header.module.css";
 import cenocchanLogo from "../Assets/cenoshine.png";
 import { UserContext } from "../UserContext";
+import { ReactComponent as UserIcon } from "../Assets/user.svg";
 
 const Header = () => {
-  const { data, userLogout } = useContext(UserContext);
+  const { data } = useContext(UserContext);
 
   return (
     <header className={styles.header}>
@@ -20,7 +21,7 @@ const Header = () => {
         {data ? (
           <Link to="/account" className={styles.login}>
             {data.nome}
-            <button onClick={userLogout}>Sair</button>
+            <UserIcon />
           </Link>
         ) : (
           <Link to="/login" className={styles.login}>
