@@ -17,7 +17,7 @@
   cursor: pointer;
 }
 
-.photo img {
+.photo > div {
   grid-area: 1/1;
 }
 
@@ -38,7 +38,7 @@
   content: "";
   display: inline-block;
   margin-right: 0.25rem;
-  background: url("../../Assets/user.svg");
+  background: url("../../Assets/view.svg");
 }
 
 .photo:hover .photoViews {
