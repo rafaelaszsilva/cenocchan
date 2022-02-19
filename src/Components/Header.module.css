@@ -25,22 +25,11 @@
   font-size: 1.2rem;
 }
 
-.login::after {
-  content: "";
-  display: inline-block;
-  width: 14px;
-  height: 17px;
-  /* background: url("../Assets/user.svg") no-repeat center center; */
-  margin-left: 0.5rem;
-  position: relative;
-  top: -1px;
+.login svg {
+  margin-left: 5px;
 }
 
 .navimg {
   width: 64px;
   height: 61px;
-}
-
-svg {
-  margin-left: 5px;
 }

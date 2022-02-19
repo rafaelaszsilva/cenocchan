@@ -7,6 +7,8 @@ import Error from "../Helper/Error";
 import styles from "./LoginForm.module.css";
 import stylesButton from "../Form/Button.module.css";
 import { UserContext } from "../../UserContext";
+import Head from "../Helper/Head";
+import { ReactComponent as Separator } from "../../Assets/separator.svg";
 
 const LoginForm = () => {
   const username = useForm();
@@ -23,6 +25,7 @@ const LoginForm = () => {
 
   return (
     <section className="animationLeft">
+      <Head title="Login" />
       <h1 className="title">Login</h1>
       <form className={styles.form} onSubmit={handleSubmit}>
         <Input label="Usuário" type="text" name="username" {...username} />
@@ -35,10 +38,11 @@ const LoginForm = () => {
 
         <Error error={error} />
       </form>
-      <Link className={styles.reset} to="/login/password">
+      <Link className={styles.reset} to="/login/password/lost">
         Resetar Senha
       </Link>
       <div className={styles.cadastro}>
+        <Separator />
         <h2 className={styles.subtitle}>Cadastre-se</h2>
         <p>Ainda não possui conta? Cadastre-se.</p>
       </div>

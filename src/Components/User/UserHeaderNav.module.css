@@ -120,11 +120,6 @@
   cursor: pointer;
 }
 
-.navMobile svg {
-  width: 20px;
-  height: 20px;
-}
-
 .navMobile a:hover svg > *,
 .navMobile button:hover > * {
   fill: #f0626f;
@@ -132,8 +127,4 @@
 
 .navMobile button {
   border-bottom: none;
-}
-
-.navMobile svg {
-  margin-right: 0.5rem;
 }
