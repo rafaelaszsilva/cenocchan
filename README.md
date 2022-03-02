@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Cenocchan
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Photo gallery application consumed by an REST API, where the user can interact with the photo CRUD, statistics, change password, and other features. Based on [Origamid](http://origamid.com)'s React Complete Course Final Project.
 
 ## Available Scripts
 
