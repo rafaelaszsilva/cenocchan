@@ -63,7 +63,7 @@ a {
   z-index: -1;
 }
 
-.animationLeft {
+.animeLeft {
   opacity: 0;
   transform: translateX(-20px);
   animation: animationLeft 0.3s forwards;
@@ -88,4 +88,8 @@ a {
 
 .AppBody {
   flex: 1;
+}
+
+.VictoryContainer {
+  height: initial !important;
 }

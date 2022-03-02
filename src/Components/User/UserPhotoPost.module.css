@@ -5,6 +5,12 @@
   gap: 2rem;
 }
 
+@media (max-width: 40rem) {
+  .photoPost {
+    grid-template-columns: 1fr;
+  }
+}
+
 .preview {
   border-radius: 1rem;
   background-size: cover;
